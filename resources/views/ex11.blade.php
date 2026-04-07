@@ -1,0 +1,26 @@
+@extends('layout')
+
+@section('conteudo')
+<h2 class="exercise-title">Exercício 11</h2>
+<form method="post" action="/ex11resp">
+    @csrf
+    <div class="row mt-3">
+        <div class="col-4 mb-3">
+            <label for="raio" class="form-label fw-bold">Digite o raio do círculo</label>
+            <input type="number" id="raio" name="raio" step="0.1" class="form-control" required="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+</form>
+
+    @isset($perimetro)
+    <div class="result-box">
+        <p class="fw">O valor do perímetro é: <strong> {{ $perimetro }} </strong></p>
+</div>
+    @endisset
+
+@endsection
