@@ -1,4 +1,4 @@
-Lista de Exercícios 1  
+## Lista de Exercícios 1  
 1. Crie um formulário que permita ao usuário inserir dois números. O script PHP deve somar 
 esses números e exibir o resultado. 
 2. Crie um formulário que permita ao usuário inserir dois números. O script PHP deve subtrair o 
